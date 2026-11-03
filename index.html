@@ -16,8 +16,8 @@
             <nav>
                 <a href="#inicio">Início</a>
                 <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
                 <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>                
             </nav>
         </div>
     </header>
@@ -47,7 +47,11 @@
                 <li>JavaScript</li>
             </ul>
 
-            <a class="botao-github" href="https://github.com/ericleirosario" target="_blank">
+            <a class="botao-github" 
+            href="https://github.com/ericleirosario" 
+            target="_blank" 
+            rel="noopener noreferrer"            
+            >
                 Meu GitHub
             </a>
 
@@ -79,9 +83,49 @@
 
         </section>
 
+        <section id="contato">
+            <h2>Contato</h2>
+
+            <form class="formulario-contato">
+                <div class="campo-formulario">
+                    <label for="nome">Nome</label>
+                    <input 
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    >
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">E-mail</label>
+                    <input 
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    >
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea 
+                    name="mensagem" 
+                    id="mensagem"
+                    rows="5"
+                    required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
     </main>
 
-    <footer id="contato">
+    <footer>
         <p>Ericlei Rosário - 2026</p>
     </footer>
 

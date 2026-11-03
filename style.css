@@ -82,13 +82,62 @@ section {
 }
 
 .card-projeto h3 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .card-projeto a {
-  color: #1d4ed8;
-  font-weight: bold;
+    color: #1d4ed8;
+    font-weight: bold;
 }
+
+.formulario-contato {
+    display: grid;
+    gap: 16px;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.campo-formulario input:focus-visible,
+.campo-formulario textarea:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+    border-color: #1d4ed8;
+}
+
+.formulario-contato button {
+    justify-self: start;
+    background-color: #1d4ed8;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-contato button:hover {
+  background-color: #1e3a8a;
+}
+
+.formulario-contato button:focus-visible {
+  outline: 3px solid #ff0000;
+  outline-offset: 3px;
+}
+
 
 footer {
     text-align: center;
